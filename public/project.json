@@ -1,0 +1,46 @@
+
+[
+  {
+    "id": 1,
+    "title": "Cap Store",
+    "image": "https://i.ibb.co.com/6mPVj1N/Screenshot-2025-01-12-212111.png",
+    "LiveDemo":"https://cap-store-client.vercel.app/",
+    "content": [
+      "**Frontend**  Building a responsive **React** project with **HTML**, **CSS**, **JavaScript**, **Tailwind CSS**, **Firebase**, **JWT**, and **Axios** for seamless authentication and API integration",
+      "**Backend**The backend of the project is developed using <strong> Node.js </strong>, <strong> Express.js </strong> for creating robust APIs, <strong> MongoDB </strong> for database management, and <strong> CORS </strong> to handle cross-origin requests efficiently.",
+      "**Other Tools** Integrating additional tools like <strong>GitHub</strong>for version control, <strong>Vercel/strong>for deployment, AOS animation for enhancing UI interactions, and **DaisyUI** for pre-styled Tailwind components.",
+      "I'm also working on making the website responsive."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Coffee Store",
+    "image": "https://i.ibb.co.com/NYvMNZh/Screenshot-2025-01-02-221319.png",
+    "LiveDemo":"https://coffee-store-client-sooty.vercel.app/",
+    "content": [
+      "**Frontend** I am working with <strong>Html</strong>, <strong> CSS </strong>, <strong>JavaScript </strong>, <strong>React </strong>, and <strong>Firebase</strong> to build dynamic and interactive applications, focusing on efficiently displaying and managing dynamic data",
+      "**Backend** On the backend side, I am working with **MongoDB**, **Express.js**, **CORS**, and related technologies to develop robust server-side functionality.",
+      "**Other Tools** Integrating additional tools like **GitHub** for version control, **Vercel** for deployment, **AOS animation** for enhancing UI interactions, and **DaisyUI** for pre-styled Tailwind components.",
+      "I'm also working on making the website responsive."
+    ]
+  },
+  
+  {
+    "id": 3,
+    "title": "Byte Blaze",
+    "image": "https://i.ibb.co.com/k5WW29t/Screenshot-2025-01-03-184204.png",
+    "LiveDemo":"https://byte-blaze-opal.vercel.app/",
+    "content": [
+<<<<<<< HEAD
+      "**Frontend** I am utilizing **HTML**, **CSS**, **JavaScript**, **React**, to create dynamic and interactive applications, with a focus on efficiently managing and displaying real-time data.",
+      "**Backend**i am using **JSON** for data collection, implementing **dynamic routes**, and working with **real-time APIs** that deliver frequently updated news, changing day by day.",
+=======
+      " **Frontend** I am utilizing **HTML**, **CSS**, **JavaScript**, **React**, to create dynamic and interactive applications, with a focus on efficiently managing and displaying real-time data.",
+      " **Backend**i am using **JSON** for data collection, implementing **dynamic routes**, and working with **real-time APIs** that deliver frequently updated news, changing day by day.",
+>>>>>>> 80f15e9 (first commit)
+      "**Other Tools** Integrating additional tools like **GitHub** for version control, **Vercel** for deployment, , and **DaisyUI** & **Mambba UI** for pre-styled Tailwind components.",
+      "I'm also working on making the website responsive."
+    ]
+  }
+  
+]
