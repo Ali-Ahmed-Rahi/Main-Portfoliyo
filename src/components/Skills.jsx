@@ -10,6 +10,7 @@ import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
 import { RiFirebaseFill, RiNextjsFill } from "react-icons/ri";
 import { GrGithub } from "react-icons/gr";
+import GlowWrapper from "../helpers/GlowWrapper";
 
 const skillList = [
   { icon: <SiHtml5 className="text-5xl text-orange-500" /> },
@@ -36,14 +37,13 @@ const Skills = () => {
         </h2>
       </div>
 
-      {/* Horizontal Scroll Carousel with Heartbeat Wave */}
-      <div className="relative overflow-hidden pt-16 h-full ">
+      <div className="relative overflow-hidden pt-16 h-full">
         {/* Gradient Edges */}
         <div className="hidden md:block absolute top-0 left-0 h-full w-20 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
         <div className="hidden md:block absolute top-0 right-0 h-full w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
 
         <div className="overflow-hidden w-full">
-          <div className="flex w-max gap-6 animate-scroll p-20 ">
+          <div className="flex w-max gap-6 animate-scroll p-20">
             {[...skillList, ...skillList].map((skill, index) => {
               const translateY =
                 index % 2 === 0
@@ -53,11 +53,14 @@ const Skills = () => {
               return (
                 <div
                   key={index}
-                  className={`flex items-center justify-center border rounded-full p-3 bg-black/30
-                        transform transition duration-500 hover:scale-110 hover:shadow-xl
-                        ${translateY}`}
+                  className={`transform transition duration-500 hover:scale-110 ${translateY}`}
                 >
-                  {skill.icon}
+                  {/* --- ANIMATION APPLIED HERE --- */}
+                  <GlowWrapper>
+                    <div className="flex items-center justify-center p-3 bg-black rounded-full">
+                      {skill.icon}
+                    </div>
+                  </GlowWrapper>
                 </div>
               );
             })}

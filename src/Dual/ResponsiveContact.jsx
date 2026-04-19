@@ -8,14 +8,14 @@ const ResponsiveContact = () => {
   return (
     <div className="font-semibold text-white">
       <div className=" fixed w-full z-50 ">
-        <div className="fixed bottom-0 w-full backdrop-blur-sm shadow-2xl p-[15px] rounded-t-lg border-t-2 border-yellow-500 ">
+        <div className="fixed bottom-0 w-full bg-black shadow-2xl p-[15px] rounded-t-lg border-t-2 border-yellow-500 ">
           <div className="flex justify-around items-center py-2">
 
             <a
              href="tel:+8801942432047 "
               className="flex flex-col items-center "
             >
-              <MdCall className="w-6 h-6" />
+              <MdCall className="w-7 h-6" />
               
             </a>
             <a 

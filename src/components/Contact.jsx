@@ -1,3 +1,5 @@
+import GlowWrapper from "../helpers/GlowWrapper";
+
 const Contact = () => {
   return (
     <div>
@@ -77,12 +79,14 @@ const Contact = () => {
                 className="block w-full rounded-md bg-black border border-l-yellow-500 border-r-yellow-500"
               ></textarea>
             </label>
+            <GlowWrapper>
             <button
               type="button"
-              className="border border-yellow-500 hover:border-b-4 hover:border-t-4  px-8 py-3 text-lg rounded  hover:backdrop-blur-lg"
+              className=" bg-black w-full  p-2 text-lg  "
             >
               Submit
             </button>
+            </GlowWrapper>
           </form>
         </div>
       </section>

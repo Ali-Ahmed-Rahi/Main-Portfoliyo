@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GlowWrapper from "../helpers/GlowWrapper";
 
 const ExperienceSection = () => {
   const [data, SetData] = useState([]);
@@ -19,7 +20,7 @@ const ExperienceSection = () => {
   return (
     <section className="py-10">
       <div>
-        <div className="space-y-5">
+        <div className="space-y-3">
           <h2 className="text-md font-work text-yellow-500 space-x-4">
             Track Recodes
           </h2>
@@ -43,15 +44,18 @@ const ExperienceSection = () => {
               <div className="md:w-3/4">
                 <div className="flex justify-between items-start mb-1">
                   <h3 className="text-xl font-bold">{exp.role}</h3>
-
-                  <a
-                    href={exp.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium text-yellow-600 hover:underline cursor-pointer border p-2 rounded-full"
-                  >
-                    Visit Website
-                  </a>
+                  <GlowWrapper>
+                    <a
+                      href={exp.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative hidden lg:flex items-center justify-center p-[1px] overflow-hidden rounded-full group"
+                    >
+                      <span className="relative z-10 flex items-center bg-black px-4 py-2 rounded-full text-sm font-medium text-white hover:text-yellow-500 transition-colors">
+                        Visit Website
+                      </span>
+                    </a>
+                  </GlowWrapper>
                 </div>
 
                 <p className="text-xs font-bold text-yellow-600 uppercase tracking-tighter mb-4">

@@ -3,7 +3,7 @@ import React from 'react';
 const Projec = () => {
   return (
     <div>
-      <div className="space-y-5">
+      <div className="space-y-3">
         <h2 className="text-md font-work text-yellow-500 space-x-4">
           Own Projects
         </h2>

@@ -1,17 +1,15 @@
-
 import { HashLink } from "react-router-hash-link";
 import ProfileSelect from "../helpers/profileSelect";
+import GlowWrapper from "../helpers/GlowWrapper";
 
 const Sidebar = () => {
-
- 
-
   return (
     <div className="md:flex md:flex-col h-screen hidden lg:block">
-
       {/* Profile */}
       <div className="flex items-center justify-center pt-12">
-        <ProfileSelect />
+        
+          <ProfileSelect />
+        
       </div>
 
       {/* Name */}
@@ -26,18 +24,13 @@ const Sidebar = () => {
 
       {/* Navigation */}
       <div className="pt-16 flex justify-center font-roboto">
-        <ul className="menu gap-6 text-center uppercase text-sm">
-
+        <ul className="menu gap-6 text-center uppercase text-sm ">
           <li>
-            <HashLink to="/#home" >
-              Home
-            </HashLink>
+            <HashLink smooth  to="/#home">Home</HashLink>
           </li>
 
           <li>
-            <HashLink to="/#about" >
-              About
-            </HashLink>
+            <HashLink smooth  to="/#about">About</HashLink>
           </li>
 
           <li>
@@ -47,17 +40,12 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <HashLink to="/#projects" >
-              Projects
-            </HashLink>
+            <HashLink smooth  to="/#projects">Projects</HashLink>
           </li>
 
           <li>
-            <HashLink to="/contact" >
-              Contact
-            </HashLink>
+            <HashLink smooth  to="/#contact">Contact</HashLink>
           </li>
-
         </ul>
       </div>
 
@@ -70,7 +58,6 @@ const Sidebar = () => {
           </p>
         </aside>
       </footer>
-
     </div>
   );
 };
