@@ -6,12 +6,10 @@
 
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 @tailwind utilities;
 
 html{
   scroll-behavior: smooth;
 }
-=======
 @tailwind utilities;
->>>>>>> 80f15e9 (first commit)
+

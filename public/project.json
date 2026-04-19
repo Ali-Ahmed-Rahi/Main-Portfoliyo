@@ -31,13 +31,11 @@
     "image": "https://i.ibb.co.com/k5WW29t/Screenshot-2025-01-03-184204.png",
     "LiveDemo":"https://byte-blaze-opal.vercel.app/",
     "content": [
-<<<<<<< HEAD
       "**Frontend** I am utilizing **HTML**, **CSS**, **JavaScript**, **React**, to create dynamic and interactive applications, with a focus on efficiently managing and displaying real-time data.",
       "**Backend**i am using **JSON** for data collection, implementing **dynamic routes**, and working with **real-time APIs** that deliver frequently updated news, changing day by day.",
-=======
       " **Frontend** I am utilizing **HTML**, **CSS**, **JavaScript**, **React**, to create dynamic and interactive applications, with a focus on efficiently managing and displaying real-time data.",
       " **Backend**i am using **JSON** for data collection, implementing **dynamic routes**, and working with **real-time APIs** that deliver frequently updated news, changing day by day.",
->>>>>>> 80f15e9 (first commit)
+
       "**Other Tools** Integrating additional tools like **GitHub** for version control, **Vercel** for deployment, , and **DaisyUI** & **Mambba UI** for pre-styled Tailwind components.",
       "I'm also working on making the website responsive."
     ]

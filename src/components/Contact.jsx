@@ -2,17 +2,10 @@ const Contact = () => {
   return (
     <div>
       <div className="space-y-5">
-<<<<<<< HEAD
         <h2 className="text-md font-work text-yellow-500 space-x-4">Contact Me</h2>
         <h2 className="uppercase font-playfair flex gap-2 text-2xl">Open <span>to</span> Talk</h2>  
       </div>
       <section className="py-6 text-white font-open border border-white/20 rounded-lg mt-12">
-=======
-        <h2 className="text-sm font-work text-yellow-500 space-x-4">Contact Me</h2>
-        <h2 className="uppercase font-playfair flex gap-2 text-2xl">Open <span>to</span> Opportunities</h2>  
-      </div>
-      <section className="py-6 text-white font-open border rounded-t-lg md:rounded-l-full mt-12">
->>>>>>> 80f15e9 (first commit)
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6 flex items-center font-playfair">
           
@@ -86,11 +79,7 @@ const Contact = () => {
             </label>
             <button
               type="button"
-<<<<<<< HEAD
               className="border border-yellow-500 hover:border-b-4 hover:border-t-4  px-8 py-3 text-lg rounded  hover:backdrop-blur-lg"
-=======
-              className="border hover:border-none px-8 py-3 text-lg rounded  hover:bg-yellow-600"
->>>>>>> 80f15e9 (first commit)
             >
               Submit
             </button>
@@ -100,5 +89,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;

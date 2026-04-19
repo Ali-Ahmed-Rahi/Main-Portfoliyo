@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 const ResponsiveSb = () => {
@@ -9,9 +8,6 @@ const ResponsiveSb = () => {
     { label: "Contact", href: "/#contact" }
   ];
 
-=======
-const ResponsiveSb = () => {
->>>>>>> 80f15e9 (first commit)
   return (
     <div className="navbar bg-black">
       <div className="navbar-start">
@@ -34,7 +30,6 @@ const ResponsiveSb = () => {
           </div>
           <ul
             tabIndex={0}
-<<<<<<< HEAD
             className="menu menu-sm dropdown-content bg-black border border-yellow-500 rounded-box z-[1] mt-3 w-[250px] p-2 shadow gap-4"
           >
             {menuItems.map((item, index) => (
@@ -55,25 +50,6 @@ const ResponsiveSb = () => {
         <Link to="/" className="btn btn-ghost text-xl text-yellow-500">Portfolio</Link>
       </div>
 
-=======
-            className="menu menu-sm dropdown-content bg-black border border-yellow-500 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">Portfolio</a>
-      </div>
->>>>>>> 80f15e9 (first commit)
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
           <svg

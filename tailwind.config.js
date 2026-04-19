@@ -11,7 +11,6 @@ export default {
         'work': ['Work Sans', 'sans-serif'],
         'roboto': ['Roboto Mono', 'monospace'],
         'open': ['Open Sans', 'sans-serif'],
-<<<<<<< HEAD
       },
       keyframes: {
         scroll: {
@@ -22,12 +21,10 @@ export default {
       animation: {
         scroll: 'scroll 25s linear infinite',
       },
-=======
-      }
->>>>>>> 80f15e9 (first commit)
     },
   },
   plugins: [
+    // eslint-disable-next-line no-undef
     require('daisyui'),
   ],
 }
