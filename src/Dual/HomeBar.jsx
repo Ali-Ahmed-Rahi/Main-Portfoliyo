@@ -2,7 +2,7 @@ import AboutMe from "../components/AboutMe";
 import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import ExperienceSection from "../components/Experiences";
-import Projec from "../components/projec";
+import Project from "../components/Project";
 import Skills from "../components/Skills";
 
 const HomeBar = () => {
@@ -23,7 +23,7 @@ const HomeBar = () => {
       </section>
 
       <section id="projects">
-        <Projec />
+        <Project />
       </section>
 
       <section>

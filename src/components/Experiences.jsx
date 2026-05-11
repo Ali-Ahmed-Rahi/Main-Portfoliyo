@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import GlowWrapper from "../helpers/GlowWrapper";
 
 const ExperienceSection = () => {
-  const [data, SetData] = useState([]);
+  const [experiences, setExperiences] = useState([]);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     fetch("/exphistory.json")
       .then((res) => res.json())
-      .then((data) => SetData(data));
+      .then((responseData) => setExperiences(responseData))
+      .catch(() => setHasError(true));
   }, []);
 
-  if (!data) {
+  if (hasError) {
     return (
-      <div className="text-8xl font-bold flex justify-center items-center text-green-500">
-        404
+      <div className="text-2xl font-bold flex justify-center items-center text-red-400 py-10">
+        Failed to load experiences.
       </div>
     );
   }
@@ -22,17 +24,17 @@ const ExperienceSection = () => {
       <div>
         <div className="space-y-3">
           <h2 className="text-md font-work text-yellow-500 space-x-4">
-            Track Recodes
+            Career Track Record
           </h2>
-          <h2 className="uppercase font-playfair flex gap-[10px] text-2xl"> 
+          <h2 className="uppercase font-playfair flex gap-[10px] text-2xl">
             Experiences
           </h2>
         </div>
 
         <div className="py-5">
-          {data.map((exp, index) => (
+          {experiences.map((exp, index) => (
             <div
-              key={index}
+              key={`${exp.company}-${exp.date}-${index}`}
               className="group relative border-t border-yellow-600 py-10 flex flex-col md:flex-row gap-8 transition-colors duration-300 hover:bg-black/5"
             >
               <div className="md:w-1/4 flex items-start gap-4">

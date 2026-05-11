@@ -1,15 +1,12 @@
 import { HashLink } from "react-router-hash-link";
 import ProfileSelect from "../helpers/profileSelect";
-import GlowWrapper from "../helpers/GlowWrapper";
 
 const Sidebar = () => {
   return (
     <div className="md:flex md:flex-col h-screen hidden lg:block">
       {/* Profile */}
       <div className="flex items-center justify-center pt-12">
-        
-          <ProfileSelect />
-        
+        <ProfileSelect />
       </div>
 
       {/* Name */}

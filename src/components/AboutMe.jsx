@@ -23,6 +23,7 @@ const AboutMe = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center bg-black"
+              aria-label="Open Facebook profile"
             >
               <FaFacebook className="w-7 h-6" />
             </a>
@@ -32,6 +33,9 @@ const AboutMe = () => {
             <a
               href="https://wa.me/+8801942432047"
               className="flex flex-col items-center "
+              aria-label="Open WhatsApp chat"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <RiWhatsappFill className="w-6 h-6 bg-black" />
             </a>
@@ -40,6 +44,7 @@ const AboutMe = () => {
             <a
               href="mailto:aliahmedrahi44@gmail.com"
               className="flex flex-col items-center "
+              aria-label="Send email to Ali Ahmed Rahi"
             >
               <MdMarkEmailUnread className="w-6 h-6 bg-black" />
             </a>
@@ -51,6 +56,7 @@ const AboutMe = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center "
+              aria-label="Open LinkedIn profile"
             >
               <FaLinkedin className="w-6 h-6 bg-black" />
             </a>
