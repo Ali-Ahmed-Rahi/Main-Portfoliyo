@@ -24,7 +24,7 @@ const ExperienceSection = () => {
           <h2 className="text-md font-work text-yellow-500 space-x-4">
             Track Recodes
           </h2>
-          <h2 className="uppercase font-playfair flex gap-[10px] text-2xl">
+          <h2 className="uppercase font-playfair flex gap-[10px] text-2xl"> 
             Experiences
           </h2>
         </div>

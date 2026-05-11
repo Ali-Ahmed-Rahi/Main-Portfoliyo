@@ -50,7 +50,7 @@ const Sidebar = () => {
       </div>
 
       {/* Footer */}
-      <footer className="footer footer-center text-white p-4 pt-32 font-work">
+      <footer className="footer footer-center text-white p-4 pt-48 font-work">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All rights reserved by

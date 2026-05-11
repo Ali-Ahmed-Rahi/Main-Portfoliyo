@@ -15,11 +15,11 @@ const Layout = () => {
         <div className="md:hidden block">
           <ResponsiveSb />
         </div>
-        <div className=" bg-black md:ml-[282px] overflow-y-auto md:px-10 px-2 mb-[70px] md:mb-0 min-h-screen">
+        <div className=" bg-black md:ml-[282px] overflow-y-auto md:px-10 px-2 mb-[70px] md:mb-0 min-h-screen ">
           <Outlet />
         </div>
         <div className="md:hidden block ">
-          <ResponsiveContact></ResponsiveContact>
+          <ResponsiveContact/>
         </div>
       </div>
     </section>
