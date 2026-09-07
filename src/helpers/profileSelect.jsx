@@ -1,4 +1,7 @@
+"use client";
+
 import { useState } from "react";
+import Image from "next/image";
 import profile from "../assets/profile-logo.jpg";
 import GlowWrapper from "./GlowWrapper";
 
@@ -15,7 +18,7 @@ const ProfileSelect = () => {
       aria-label="Toggle profile zoom"
     >
       <GlowWrapper>
-        <img
+        <Image
           src={profile}
           alt="Ali Ahmed Rahi"
           className="h-40 w-40 rounded-full object-cover shadow-lg"

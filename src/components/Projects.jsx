@@ -1,4 +1,6 @@
-import ProjectGrid from "../components/ProjectGrid";
+"use client";
+
+import ProjectGrid from "./ProjectGrid";
 import useProjects from "../hooks/useProjects";
 
 const Projects = () => {

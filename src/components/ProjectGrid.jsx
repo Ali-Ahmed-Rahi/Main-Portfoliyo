@@ -1,15 +1,24 @@
 import { FaArrowLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { parseProjectContent } from "../helpers/projectContent";
+import Reveal from "../helpers/Reveal";
 
-const ProjectGrid = ({ projects, limit, showHint = false, showMoreLink = false }) => {
-  const visibleProjects = typeof limit === "number" ? projects.slice(0, limit) : projects;
+const ProjectGrid = ({
+  projects,
+  limit,
+  showHint = false,
+  showMoreLink = false,
+}) => {
+  const visibleProjects =
+    typeof limit === "number" ? projects.slice(0, limit) : projects;
 
   return (
     <div className="grid md:grid-cols-2 gap-8 mt-8">
       {visibleProjects.map((project) => (
-        <article
+        <Reveal
           key={project.title}
+          delay={visibleProjects.indexOf(project) * 0.1}
+          amount={0.15}
           className="text-white border rounded-t-lg border-yellow-500"
         >
           <figure>
@@ -73,13 +82,13 @@ const ProjectGrid = ({ projects, limit, showHint = false, showMoreLink = false }
               </a>
             </div>
           </div>
-        </article>
+        </Reveal>
       ))}
 
       {showMoreLink && (
         <div className="md:col-span-2 flex justify-center">
           <Link
-            to="/projects"
+            href="/projects"
             className="btn mt-2 font-semibold bg-black border text-white rounded-full border-yellow-500 hover:bg-white hover:text-black"
           >
             Show More
