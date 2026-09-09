@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const ResponsiveSb = () => {
   const menuItems = [
@@ -40,7 +40,7 @@ const ResponsiveSb = () => {
             {menuItems.map((item, index) => (
               <li key={index}>
                 <Link
-                  to={item.href}
+                  href={item.href}
                   className="text-yellow-500  rounded text-lg "
                 >
                   {item.label}
@@ -52,7 +52,7 @@ const ResponsiveSb = () => {
       </div>
 
       <div className="navbar-center">
-        <Link to="/" className="btn btn-ghost text-xl text-yellow-500">Portfolio</Link>
+        <Link href="/" className="btn btn-ghost text-xl text-yellow-500">Portfolio</Link>
       </div>
 
       <div className="navbar-end" />

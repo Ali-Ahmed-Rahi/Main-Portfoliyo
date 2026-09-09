@@ -1,4 +1,4 @@
-import { HashLink } from "react-router-hash-link";
+import Link from "next/link";
 import ProfileSelect from "../helpers/profileSelect";
 
 const Sidebar = () => {
@@ -23,25 +23,25 @@ const Sidebar = () => {
       <div className="pt-16 flex justify-center font-roboto">
         <ul className="menu gap-6 text-center uppercase text-sm ">
           <li>
-            <HashLink smooth  to="/#home">Home</HashLink>
+            <Link href="/#home">Home</Link>
           </li>
 
           <li>
-            <HashLink smooth  to="/#about">About</HashLink>
+            <Link href="/#about">About</Link>
           </li>
 
           <li>
-            <HashLink smooth to="/#skills">
+            <Link href="/#skills">
               Skills
-            </HashLink>
+            </Link>
           </li>
 
           <li>
-            <HashLink smooth  to="/#projects">Projects</HashLink>
+            <Link href="/#projects">Projects</Link>
           </li>
 
           <li>
-            <HashLink smooth  to="/#contact">Contact</HashLink>
+            <Link href="/#contact">Contact</Link>
           </li>
         </ul>
       </div>

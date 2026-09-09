@@ -1,5 +1,8 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import GlowWrapper from "../helpers/GlowWrapper";
+import Reveal from "../helpers/Reveal";
 
 const ExperienceSection = () => {
   const [experiences, setExperiences] = useState([]);
@@ -33,8 +36,10 @@ const ExperienceSection = () => {
 
         <div className="py-5">
           {experiences.map((exp, index) => (
-            <div
+            <Reveal
               key={`${exp.company}-${exp.date}-${index}`}
+              delay={index * 0.08}
+              amount={0.15}
               className="group relative border-t border-yellow-600 py-10 flex flex-col md:flex-row gap-8 transition-colors duration-300 hover:bg-black/5"
             >
               <div className="md:w-1/4 flex items-start gap-4">
@@ -66,7 +71,7 @@ const ExperienceSection = () => {
 
                 <p className="leading-relaxed max-w-2xl">{exp.description}</p>
               </div>
-            </div>
+            </Reveal>
           ))}
           <div className="border-t border-yellow-600" />
         </div>
