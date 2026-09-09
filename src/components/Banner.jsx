@@ -61,6 +61,7 @@ const Banner = () => {
           Hi!
         </MotionH1>
         <MotionH2
+        
           {...reveal(0.8)}
           className="font-playfair text-4xl font-bold text-yellow-500 sm:text-5xl lg:text-7xl"
         >
